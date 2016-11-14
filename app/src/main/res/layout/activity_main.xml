@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.ankita.scarnesdice.MainActivity">
+
+    <TextView
+        android:id="@+id/turn"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YOUR TURN "
+        android:paddingBottom="20dp"
+        />
+    <LinearLayout
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="YOUR TOTAL "
+        />
+    <TextView
+        android:id="@+id/yt"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="COMP TOTAL "
+            />
+        <TextView
+            android:id="@+id/ct"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="YOUR CURRENT "
+            />
+        <TextView
+            android:id="@+id/yc"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="COMP CURRENT "
+            />
+        <TextView
+            android:id="@+id/cc"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+<ImageView
+    android:padding="5dp"
+    android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dice1"
+    />
+<LinearLayout
+    android:padding="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/rollbutton"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+        android:onClick="roll"
+        />
+    <Button
+        android:id="@+id/holdbutton"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hold"
+        android:onClick="hold"
+        />
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="reset"
+        />
+
+</LinearLayout>
+
+</LinearLayout>
